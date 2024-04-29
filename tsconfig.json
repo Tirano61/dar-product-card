@@ -1,4 +1,6 @@
 {
+  "typeRoots": ["../node_modules/@types", "./node_modules/@types", "../node_modules/@testing-library"],
+  "types": ["jest", "jest-dom"],
   // see https://www.typescriptlang.org/tsconfig to better understand tsconfigs
   "include": ["src", "types"],
   "compilerOptions": {

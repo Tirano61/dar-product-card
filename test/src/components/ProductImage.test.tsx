@@ -6,26 +6,26 @@ import { product2 } from "../data/products";
 
 
 describe('ProductImage', () => {
-  test('Debe mostrar el componente correctamente con la imagen personaliado', () => { 
-      const wrapper = render(
-        <ProductImage img="url de la imagen" />
-      )
-
-      expect( wrapper.asFragment()).toMatchSnapshot();
-      
-  });
-  test('Debe mostrar el conponente con la imagenu del producto', () => { 
+  test('Debe mostrar el componente correctamente con la imagen personaliado', () => {
     const wrapper = render(
-      <ProductCard product={ product2 } >
-      {
-        () =>(
-          <ProductImage />
-        )
-      }
+      <ProductImage img="url de la imagen" />
+    )
+
+    expect(wrapper.asFragment()).toMatchSnapshot();
+
+  });
+  test('Debe mostrar el conponente con la imagenu del producto', () => {
+    const wrapper = render(
+      <ProductCard product={product2} >
+        {
+          () => (
+            <ProductImage />
+          )
+        }
       </ProductCard>
     )
-    
-    expect( wrapper.asFragment()).toMatchSnapshot();
+
+    expect(wrapper.asFragment()).toMatchSnapshot();
   });
 
 });

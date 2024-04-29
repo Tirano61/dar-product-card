@@ -28,7 +28,7 @@ exports[`ProductCard Debe incrementar el contador 1`] = `
     <button
       data-testid="button"
     >
-      +1
+      1
     </button>
   </div>
 </DocumentFragment>
